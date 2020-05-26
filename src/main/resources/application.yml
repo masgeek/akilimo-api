@@ -50,6 +50,7 @@ plumber:
   recommendation-ng-demo: v2/dst/recommendation/demo/ng/compute
   recommendation-tz-demo: v2/dst/recommendation/demo/tz/compute
 
+
 messaging:
   test-numbers:
   web-hook-url: https://enj4dfsqm8xr.x.pipedream.net
@@ -61,4 +62,13 @@ messaging:
   email:
     sender:
     pass:
+  firebase:
+    config-file: "D:\\gdrive\\keystores\\service_accounts\\fertilizerestimate-firebase-adminsdk-htr7d-09a391143b.json"
+    defaults: {topic: 'common',
+               title: 'Common topic - Hello',
+               message: 'Sending test message \uD83D\uDE42',
+               token: 'ss22t03wz208eg:APA2idkkow223FE_0v5yHxqCLTyxAQafj6nWaqi4QzwZTW004q1PUux63UsFN',
+               payloadMessageId: '123',
+               payloadData: 'Hello. This is payload content.'
+    }
 

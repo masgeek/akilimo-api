@@ -1,6 +1,7 @@
 package com.acai.akilimo.config
 
 import com.acai.akilimo.properties.CurrencyProperties
+import com.acai.akilimo.properties.FireBaseProperties
 import com.acai.akilimo.properties.MessagingProperties
 import com.acai.akilimo.properties.PlumberProperties
 import org.springframework.boot.context.properties.ConfigurationProperties
@@ -8,7 +9,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class AkilimoConfigProperties {
+class AppProperties {
 
     @Bean
     @ConfigurationProperties(prefix = "akilimo.currency")
@@ -39,5 +40,11 @@ class AkilimoConfigProperties {
     @ConfigurationProperties(prefix = "messaging.email")
     fun email(): MessagingProperties {
         return MessagingProperties()
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "messaging.firebase")
+    fun firebase(): FireBaseProperties {
+        return FireBaseProperties()
     }
 }

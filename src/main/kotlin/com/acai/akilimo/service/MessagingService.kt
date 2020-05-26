@@ -1,6 +1,6 @@
 package com.acai.akilimo.service
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.interfaces.IMessagingService
 import com.acai.akilimo.mapper.RecommendationResponseDto
 import com.acai.akilimo.properties.MessagingProperties
@@ -15,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
-import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
 
@@ -24,10 +23,10 @@ import org.springframework.web.client.RestTemplate
 class MessagingService
 @Autowired
 
-constructor(final val akilimoConfig: AkilimoConfigProperties) : IMessagingService {
+constructor(appProperties: AppProperties) : IMessagingService {
 
     private val logger = LoggerFactory.getLogger(MessagingService::class.java)
-    private val sms: MessagingProperties = akilimoConfig.sms()
+    private val sms: MessagingProperties = appProperties.sms()
 
     private val phoneUtil = PhoneNumberUtil.getInstance()
 

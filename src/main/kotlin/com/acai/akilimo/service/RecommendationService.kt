@@ -1,6 +1,6 @@
 package com.acai.akilimo.service
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.entities.Payload
 import com.acai.akilimo.enums.EnumCountry
 import com.acai.akilimo.enums.EnumFertilizer
@@ -31,11 +31,11 @@ class RecommendationService
 constructor(private val restTemplate: RestTemplate,
             val fertilizerRepository: FertilizerRepository,
             val payloadRepository: PayloadRepository,
-            akilimoConfigProperties: AkilimoConfigProperties) {
+            appProperties: AppProperties) {
 
     private val logger = LoggerFactory.getLogger(RecommendationService::class.java)
 
-    private val plumberPropertiesProperties: PlumberProperties = akilimoConfigProperties.plumber()
+    private val plumberPropertiesProperties: PlumberProperties = appProperties.plumber()
     private val mapper = ObjectMapper()
     private val modelMapper = ModelMapper()
     private lateinit var recommendationResponseDto: RecommendationResponseDto

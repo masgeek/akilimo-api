@@ -1,7 +1,7 @@
 package com.acai.akilimo.service
 
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.entities.FertilizerPrices
 import com.acai.akilimo.enums.EnumCountry
 import com.acai.akilimo.interfaces.IFertilizerPriceService
@@ -22,10 +22,10 @@ class FertilizerPriceService
 @Autowired
 constructor(
         private val fertilizerPriceRepository: FertilizerPriceRepository,
-        akilimoConfigProperties: AkilimoConfigProperties
+        appProperties: AppProperties
 ) : IFertilizerPriceService {
     private val logger = LoggerFactory.getLogger(FertilizerPriceService::class.java)
-    private val currencyProperties = akilimoConfigProperties.currency()
+    private val currencyProperties = appProperties.currency()
 
     val conversion: CurrencyConversion = CurrencyConversion()
 

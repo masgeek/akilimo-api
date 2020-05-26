@@ -1,6 +1,6 @@
 package com.acai.akilimo.service
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.mapper.RecommendationResponseDto
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test
 internal class MessagingPropertiesServiceTest {
 
     private val recommendationResponseDto = RecommendationResponseDto()
-    private val service = MessagingService(akilimoConfig = AkilimoConfigProperties())
+    private val service = MessagingService(appProperties = AppProperties())
 
     /*@Ignore
     @Test()

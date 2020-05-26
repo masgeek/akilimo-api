@@ -1,14 +1,12 @@
 package com.acai.akilimo.service
 
 
-import com.acai.akilimo.config.AkilimoConfigProperties
 import com.acai.akilimo.entities.AvailableFertilizers
 import com.acai.akilimo.enums.EnumCountry
 import com.acai.akilimo.interfaces.IFertilizerService
 import com.acai.akilimo.mapper.FertilizerDto
 import com.acai.akilimo.repositories.FertilizerRepository
 import com.acai.akilimo.request.FertilizerRequest
-import com.acai.akilimo.utils.CurrencyConversion
 import org.modelmapper.ModelMapper
 import org.modelmapper.convention.MatchingStrategies
 import org.slf4j.LoggerFactory

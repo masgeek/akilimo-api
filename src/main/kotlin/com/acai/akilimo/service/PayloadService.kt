@@ -1,7 +1,7 @@
 package com.acai.akilimo.service
 
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.entities.Payload
 import com.acai.akilimo.interfaces.IPayloadCostService
 import com.acai.akilimo.mapper.PayloadDto
@@ -21,10 +21,10 @@ class PayloadService
 @Autowired
 constructor(
         private val payloadRepository: PayloadRepository,
-        akilimoConfigProperties: AkilimoConfigProperties
+        appProperties: AppProperties
 ) : IPayloadCostService {
     private val logger = LoggerFactory.getLogger(PayloadService::class.java)
-    private val currencyProperties = akilimoConfigProperties.currency()
+    private val currencyProperties = appProperties.currency()
 
     val conversion: CurrencyConversion = CurrencyConversion()
 

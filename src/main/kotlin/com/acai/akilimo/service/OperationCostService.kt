@@ -1,7 +1,7 @@
 package com.acai.akilimo.service
 
 
-import com.acai.akilimo.config.AkilimoConfigProperties
+import com.acai.akilimo.config.AppProperties
 import com.acai.akilimo.entities.OperationCost
 import com.acai.akilimo.interfaces.IOperationCostService
 import com.acai.akilimo.mapper.OperationCostDto
@@ -19,10 +19,10 @@ class OperationCostService
 @Autowired
 constructor(
         private val operationCostRepository: OperationCostRepository,
-        akilimoConfigProperties: AkilimoConfigProperties
+        appProperties: AppProperties
 ) : IOperationCostService {
     private val logger = LoggerFactory.getLogger(OperationCostService::class.java)
-    private val currencyProperties = akilimoConfigProperties.currency()
+    private val currencyProperties = appProperties.currency()
 
     val conversion: CurrencyConversion = CurrencyConversion()
 
