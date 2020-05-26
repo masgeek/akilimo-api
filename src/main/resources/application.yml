@@ -67,7 +67,7 @@ messaging:
     defaults: {topic: 'common',
                title: 'Common topic - Hello',
                message: 'Sending test message \uD83D\uDE42',
-               token: 'ss22t03wz208eg:APA2idkkow223FE_0v5yHxqCLTyxAQafj6nWaqi4QzwZTW004q1PUux63UsFN',
+               token: 'cTURRvGlR4e3SQYzwjzOEa:APA91bFMZ1hLAhtiAsDyzTsYc-X8Kln_EJcy7eS6cV-nT2aPudIz4NpEL6LTN6efWDxspZt5kJ0tFLOUgXpBmtgjsrNte7P8p-xP11fpfUEJGJdrJ77ki03dfpFa9-2kLOtHN2jMzFT1',
                payloadMessageId: '123',
                payloadData: 'Hello. This is payload content.'
     }

@@ -79,8 +79,12 @@ class PushNotificationService(private val fcmService: FCMService,
     }
 
     fun samplePushNotificationRequest(): PushNotificationRequest {
-        return PushNotificationRequest(defaults["title"],
-                defaults["message"],
-                defaults["topic"])
+        val title: String? = defaults.get("title")
+        val message: String? = defaults.get("message")
+        val topic: String? = defaults.get("topic")
+        return PushNotificationRequest(
+                title,
+                message,
+                topic)
     }
 }

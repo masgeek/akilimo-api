@@ -9,7 +9,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 
-@RequestMapping("/api/v3/notifications")
+@RequestMapping("/api/v2/notifications")
 @RestController
 class PushNotificationsController(private val pushNotificationService: PushNotificationService) : BaseController() {
     companion object {

@@ -66,8 +66,8 @@ class FCMService {
     }
 
     private fun getPreconfiguredMessageBuilder(request: PushNotificationRequest): Message.Builder {
-        val androidConfig = getAndroidConfig(request.topic)
-        val apnsConfig = getApnsConfig(request.topic)
+        val androidConfig = getAndroidConfig(request.topic!!)
+        val apnsConfig = getApnsConfig(request.topic!!)
 
         val notification = Notification
                 .builder()
