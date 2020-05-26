@@ -22,6 +22,7 @@ class FireBaseMessagingService(appProperties: AppProperties) {
 
     private val logger = LoggerFactory.getLogger(FireBaseMessagingService::class.java)
 
+
     private val firebase: FireBaseProperties = appProperties.firebase()
 
 
