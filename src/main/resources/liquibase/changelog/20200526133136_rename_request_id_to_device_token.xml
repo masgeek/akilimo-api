@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+    <changeSet id="20200526133136" author="masgeek" dbms="h2,oracle,mysql,mariadb">
+
+        <renameColumn tableName="request_response"
+                      oldColumnName="request_id"
+                      columnDataType="varchar(250)"
+                      remarks="Stored the token for FCM messaging"
+                      newColumnName="device_token"/>
+    </changeSet>
+</databaseChangeLog>
