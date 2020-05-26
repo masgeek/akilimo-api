@@ -18,7 +18,7 @@ class Payload {
     @GenericGenerator(name = "native", strategy = "native")
     var id: Long? = null
 
-    var requestId: String? = null
+    var deviceToken: String? = null
 
     @Type(type = "text")
     var droidRequest: String? = null

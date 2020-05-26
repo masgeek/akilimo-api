@@ -50,4 +50,6 @@
     <include file="/liquibase/changelog/20200524002209_create_sweet_potato_prices_table.xml"/>
     <include file="/liquibase/changelog/20200524002251_import_default_potato_prices.xml"/>
 
+    <include file="/liquibase/changelog/20200526133136_rename_request_id_to_device_token.xml"/>
+
 </databaseChangeLog>

@@ -58,7 +58,7 @@ constructor(
     }
 
     override fun findPayloadByRequestId(requestId: String): List<PayloadDto> {
-        val payloadList = payloadRepository.findAllByRequestId(requestId)
+        val payloadList = payloadRepository.findAllByDeviceToken(requestId)
         return processListResponse(payloadList)
     }
 

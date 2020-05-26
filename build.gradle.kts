@@ -86,6 +86,7 @@ dependencies {
     implementation("com.plivo:plivo-java:4.4.1")
 
     implementation("com.vladmihalcea:hibernate-types-52:1.0.0")
+    implementation("com.google.firebase:firebase-admin:6.13.0")
 
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("org.springframework.boot:spring-boot-devtools")

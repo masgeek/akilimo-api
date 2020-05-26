@@ -107,7 +107,7 @@ constructor(private val restTemplate: RestTemplate,
 
         //let us save the logged requests
         val payload = Payload()
-        payload.requestId = recommendationRequest.userInfo.deviceID
+        payload.deviceToken = recommendationRequest.userInfo.deviceToken
         payload.droidRequest = droidRequestString
         payload.plumberRequest = plumberRequestString
         payload.plumberResponse = plumberResponseString

@@ -4,7 +4,7 @@ import lombok.Data
 
 @Data
 class UserInfo(
-        val deviceID: String,
+        val deviceToken: String,
         var mobileCountryCode: String,
         var mobileNumber: String,
         var fullPhoneNumber: String,

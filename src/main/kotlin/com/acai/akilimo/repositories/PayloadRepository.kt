@@ -12,5 +12,5 @@ interface PayloadRepository : JpaRepository<Payload, Long> {
 
     override fun findAll(): List<Payload>
 
-    fun findAllByRequestId(requestId: String): List<Payload>
+    fun findAllByDeviceToken(deviceToken: String): List<Payload>
 }
