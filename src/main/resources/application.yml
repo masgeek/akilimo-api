@@ -64,8 +64,8 @@ messaging:
     pass:
   firebase:
     config-file: "D:\\gdrive\\keystores\\service_accounts\\fertilizerestimate-firebase-adminsdk-htr7d-09a391143b.json"
-    defaults: {topic: 'common',
-               title: 'Common topic - Hello',
+    defaults: {topic: 'akilimo-updates',
+               title: 'Akilimo mobile updates',
                message: 'Sending test message \uD83D\uDE42',
                token: 'cTURRvGlR4e3SQYzwjzOEa:APA91bFMZ1hLAhtiAsDyzTsYc-X8Kln_EJcy7eS6cV-nT2aPudIz4NpEL6LTN6efWDxspZt5kJ0tFLOUgXpBmtgjsrNte7P8p-xP11fpfUEJGJdrJ77ki03dfpFa9-2kLOtHN2jMzFT1',
                payloadMessageId: '123',

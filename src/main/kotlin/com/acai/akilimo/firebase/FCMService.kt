@@ -51,7 +51,8 @@ class FCMService {
     }
 
     private fun getPreconfiguredMessageToToken(request: PushNotificationRequest): Message {
-        return getPreconfiguredMessageBuilder(request).setToken(request.token)
+        return getPreconfiguredMessageBuilder(request)
+                .setToken(request.token)
                 .build()
     }
 
@@ -61,7 +62,9 @@ class FCMService {
     }
 
     private fun getPreconfiguredMessageWithData(data: MutableMap<String, String?>, request: PushNotificationRequest): Message {
-        return getPreconfiguredMessageBuilder(request).putAllData(data).setTopic(request.topic)
+        return getPreconfiguredMessageBuilder(request)
+                .putAllData(data)
+                .setTopic(request.topic)
                 .build()
     }
 
